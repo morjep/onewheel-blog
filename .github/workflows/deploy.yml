@@ -79,7 +79,7 @@ jobs:
       - name: ⚡ Run vitest
         run: npm run test -- --coverage
 
-    build:
+  build:
     name: 🐳 Build
     # only build/deploy main branch on pushes
     if: ${{ (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/dev') && github.event_name == 'push' }}
